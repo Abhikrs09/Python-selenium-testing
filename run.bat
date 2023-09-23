@@ -1,0 +1,1 @@
+pytest -v -s -m "sanity or regression" -n=8 --html=Reports\report.html testCases/  --browser chrome
