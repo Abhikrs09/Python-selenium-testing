@@ -20,8 +20,8 @@ class Test_001_Registration:
         self.logger.info("********************** Verifying The Registration Page ************************")
 
         self.driver = setup
-        self.driver.get(ReadConfig.getApplicationUrl())
-        self.driver.maximize_window()
+        # self.driver.get(ReadConfig.getApplicationUrl())
+        # self.driver.maximize_window()
 
         self.lp = LoginPage(self.driver)
         self.logger.info("************* click Registration link from LoginPage **********")

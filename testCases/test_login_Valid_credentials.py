@@ -20,7 +20,7 @@ class Test_002_Login:
         self.logger.info("********************** Verifying Login Page Title ************************")
 
         self.driver = setup
-        self.driver.get(self.baseUrl)
+        # self.driver.get(self.baseUrl)
 
         act_title = self.driver.title
 

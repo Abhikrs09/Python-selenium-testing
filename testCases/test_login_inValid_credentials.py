@@ -22,7 +22,7 @@ class Test_003_LoginInvalid_Credentials:
         self.logger.info("********************** Test_003_Login ************************")
         self.logger.info("********************** Verifying able to login using invalid credentials ************************")
         self.driver = setup
-        self.driver.get(self.baseUrl)
+        # self.driver.get(self.baseUrl)
 
         self.lp = LoginPage(self.driver)
         self.lp.clickRegister()

@@ -21,7 +21,7 @@ class Test_004_email:
         password = random_data_for_testcase.rnd_name(7)
 
         self.driver = setup
-        self.driver.get(self.baseUrl)
+        # self.driver.get(self.baseUrl)
 
         self.lp = LoginPage(self.driver)
         self.lp.clickRegister()
@@ -65,7 +65,7 @@ class Test_004_email:
         self.home = Homepage(self.driver)
         self.home.click_logOut_xpath()
 
-        act_title = self.driver.title
+        act_title = self.driver.title + "123"
 
         if act_title == "ParaBank | Welcome | Online Banking":
             assert True

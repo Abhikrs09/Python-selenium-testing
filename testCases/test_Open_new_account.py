@@ -23,7 +23,7 @@ class Test_004_new_Account:
         password = random_data_for_testcase.rnd_name(7)
 
         self.driver = setup
-        self.driver.get(self.baseUrl)
+        # self.driver.get(self.baseUrl)
 
         self.lp = LoginPage(self.driver)
         self.lp.clickRegister()
